@@ -1,16 +1,34 @@
-//
-//  ContentView.swift
-//  ISYS556-Assignment06
-//
-//  Created by JPL-ST-SPRING2022 on 10/14/22.
-//
+/*
+    Patrick Mims
+    Date: October 14, 2022
+    Assignment: Assigning Grades with if-else-if
+    09/04 - 09/10
+    ISYS556
+ */
 
 import SwiftUI
 
+struct ResultView: View {
+    var choice: String
+    
+    var body: some View {
+        Text("You chose \(choice)")
+    }
+}
+
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(spacing: 30) {
+                NavigationLink(destination: ResultView(choice: "Heads")) {
+                    Text("ISYS-556")
+                        .padding()
+                        .background(.gray)
+                }
+                .navigationBarTitle("San Francisco State", displayMode: .inline)
+            }
+        }
+        .background(Color.green)
     }
 }
 
