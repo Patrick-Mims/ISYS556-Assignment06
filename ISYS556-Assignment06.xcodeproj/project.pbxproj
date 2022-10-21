@@ -14,6 +14,7 @@
 		B584D12A28FA5CB000746E9D /* ISYS556_Assignment06Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584D12928FA5CB000746E9D /* ISYS556_Assignment06Tests.swift */; };
 		B584D13428FA5CB000746E9D /* ISYS556_Assignment06UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584D13328FA5CB000746E9D /* ISYS556_Assignment06UITests.swift */; };
 		B584D13628FA5CB000746E9D /* ISYS556_Assignment06UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584D13528FA5CB000746E9D /* ISYS556_Assignment06UITestsLaunchTests.swift */; };
+		B584D143290232C300746E9D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584D142290232C300746E9D /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B584D12F28FA5CB000746E9D /* ISYS556-Assignment06UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ISYS556-Assignment06UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B584D13328FA5CB000746E9D /* ISYS556_Assignment06UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISYS556_Assignment06UITests.swift; sourceTree = "<group>"; };
 		B584D13528FA5CB000746E9D /* ISYS556_Assignment06UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISYS556_Assignment06UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B584D142290232C300746E9D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		B584D10C28FA5CAB00746E9D = {
 			isa = PBXGroup;
 			children = (
+				B584D142290232C300746E9D /* MenuView.swift */,
 				B584D11728FA5CAB00746E9D /* ISYS556-Assignment06 */,
 				B584D12828FA5CB000746E9D /* ISYS556-Assignment06Tests */,
 				B584D13228FA5CB000746E9D /* ISYS556-Assignment06UITests */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B584D11B28FA5CAB00746E9D /* ContentView.swift in Sources */,
+				B584D143290232C300746E9D /* MenuView.swift in Sources */,
 				B584D11928FA5CAB00746E9D /* ISYS556_Assignment06App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
