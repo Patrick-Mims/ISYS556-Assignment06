@@ -8,30 +8,86 @@
 
 import SwiftUI
 
+struct StudentView: View {
+    let title = "Student View"
+    
+    @State private var students = [
+        "Sarah",
+        "Michael",
+        "Kimberly",
+        "Sam",
+        "Anne",
+        "Patrick"
+    ]
+    
+    var body: some View {
+        NavigationView {
+            ZStack {
+                Color.mint
+                VStack {
+                    List {
+                        ForEach(students, id: \.self) {
+                            student in Text(student)
+                        }
+                    }
+                    /*
+                     NavigationLink(destination: ContentView()) {
+                     Text(title)
+                     }
+                     .navigationTitle("Students")
+                     */
+                }
+            }
+            .accentColor(Color.white)
+        }
+    }
+}
+
+struct EventsView: View {
+    let title = "Events View"
+    var body: some View {
+        ZStack {
+            Color.orange
+            VStack {
+                NavigationLink(destination: StudentView()) {
+                    Text(title + " Page")
+                }
+                .navigationBarTitle("Connect App", displayMode: .inline)
+            }
+        }
+        .accentColor(Color.white)
+    }
+}
+
 struct BookView: View {
-    let company = "Library"
+    let title = "Library View"
     var body: some View {
         ZStack {
             Color.brown
             VStack {
-                Text(company)
+                NavigationLink(destination: EventsView()) {
+                    Text(title)
+                }
+                .navigationBarTitle("Connect App", displayMode: .inline)
             }
         }
+        .accentColor(Color.white)
     }
 }
 
 struct ResultView: View {
     var choice: String
-    let message = "Events On Campus"
+    let title = "J. Paul Leonard Library"
     
     var body: some View {
             ZStack {
                 Color.cyan
                 VStack {
-                    Text(message + " chose \(choice)")
+    //                Text(title + " chose \(choice)")
                     NavigationLink(destination: BookView()) {
-                        Text("Events @ SFSU")
+                        Text("Results View")
                     }
+                    .navigationBarTitle("Connect App", displayMode: .inline)
                 }
             }
             .accentColor(Color.black)
